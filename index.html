@@ -1,0 +1,118 @@
+
+    <!DOCTYPE html>
+    <html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daily Stock Scanner</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; margin: 0; padding: 20px; }
+            .container { max-width: 1000px; margin: 0 auto; }
+            h1 { color: #2ed573; text-align: center; margin-bottom: 5px; }
+            .datum { text-align: center; color: #a4b0be; font-size: 0.9em; margin-bottom: 25px; }
+            .card { background-color: #1e1e1e; padding: 20px; border-radius: 10px; border: 1px solid #333; }
+            .warning { background-color: #2d1b1b; color: #ff6b6b; border-color: #ff4757; text-align: center; }
+            .moja-tablica { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; text-align: center; }
+            .moja-tablica th { background-color: #1b4d3e; color: #2ed573; padding: 12px; border-bottom: 2px solid #2ed573; }
+            .moja-tablica td { padding: 10px; border-bottom: 1px solid #333; }
+            .moja-tablica tr:nth-child(even) { background-color: #242424; }
+            code { background-color: #222; color: #2ed573; padding: 4px 8px; border-radius: 4px; font-size: 13px; }
+            ul { list-style-type: none; padding-left: 0; }
+            li { margin-bottom: 8px; }
+            a { color: #2ed573; text-decoration: underline; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📈 Dnevni Skener Dionica</h1>
+            <div class="datum">Zadnje ažuriranje: 2026-08-28 13:12 CEST</div>
+            
+        <div class="card">
+            <h3>✅ Pronađeni Signali</h3>
+            <div style="overflow-x:auto;"><table border="1" class="dataframe moja-tablica">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Dionica</th>
+      <th>Ulaz (€/$)</th>
+      <th>RSI</th>
+      <th>TP (+4%)</th>
+      <th>SL (-2%)</th>
+      <th>Est. Dana</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/GOOGL" target="_blank">GOOGL 🔗</a></td>
+      <td>340.65</td>
+      <td>33.7</td>
+      <td>354.28</td>
+      <td>333.84</td>
+      <td>~4d</td>
+    </tr>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/AMZN" target="_blank">AMZN 🔗</a></td>
+      <td>256.26</td>
+      <td>29.8</td>
+      <td>266.51</td>
+      <td>251.13</td>
+      <td>~3d</td>
+    </tr>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/INTC" target="_blank">INTC 🔗</a></td>
+      <td>92.09</td>
+      <td>36.5</td>
+      <td>95.77</td>
+      <td>90.25</td>
+      <td>~2d</td>
+    </tr>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/BAC" target="_blank">BAC 🔗</a></td>
+      <td>61.17</td>
+      <td>37.9</td>
+      <td>63.62</td>
+      <td>59.95</td>
+      <td>~4d</td>
+    </tr>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/DAL" target="_blank">DAL 🔗</a></td>
+      <td>81.14</td>
+      <td>25.1</td>
+      <td>84.39</td>
+      <td>79.52</td>
+      <td>~3d</td>
+    </tr>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/NOVO-B.CO" target="_blank">NOVO-B.CO 🔗</a></td>
+      <td>296.75</td>
+      <td>44.6</td>
+      <td>308.62</td>
+      <td>290.81</td>
+      <td>~3d</td>
+    </tr>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/NESN.SW" target="_blank">NESN.SW 🔗</a></td>
+      <td>78.43</td>
+      <td>38.9</td>
+      <td>81.57</td>
+      <td>76.86</td>
+      <td>~4d</td>
+    </tr>
+    <tr>
+      <td><a href="https://finance.yahoo.com/quote/PUM.DE" target="_blank">PUM.DE 🔗</a></td>
+      <td>25.52</td>
+      <td>32.4</td>
+      <td>26.54</td>
+      <td>25.01</td>
+      <td>~2d</td>
+    </tr>
+  </tbody>
+</table></div>
+            <hr style="border: 0.5px solid #333; margin: 20px 0;">
+            <h3>📋 Gotovi Nalozi za Brokera</h3>
+            <ul><li><code>KUPI 1x GOOGL @ 340.65 | TP: 354.28 | SL: 333.84</code></li><br><li><code>KUPI 2x AMZN @ 256.26 | TP: 266.51 | SL: 251.13</code></li><br><li><code>KUPI 6x INTC @ 92.09 | TP: 95.77 | SL: 90.25</code></li><br><li><code>KUPI 9x BAC @ 61.17 | TP: 63.62 | SL: 59.95</code></li><br><li><code>KUPI 7x DAL @ 81.14 | TP: 84.39 | SL: 79.52</code></li><br><li><code>KUPI 2x NOVO-B.CO @ 296.75 | TP: 308.62 | SL: 290.81</code></li><br><li><code>KUPI 7x NESN.SW @ 78.43 | TP: 81.57 | SL: 76.86</code></li><br><li><code>KUPI 23x PUM.DE @ 25.52 | TP: 26.54 | SL: 25.01</code></li></ul>
+        </div>
+        
+        </div>
+    </body>
+    </html>
+    
